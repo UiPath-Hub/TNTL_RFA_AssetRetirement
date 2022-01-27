@@ -1,0 +1,1675 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BackupAfterSAP1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1149,8588" sap2010:WorkflowViewState.IdRef="BackupAfterSAP1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="MainSAP" sap:VirtualizedContainerService.HintSize="1159,8423" sap2010:WorkflowViewState.IdRef="Sequence_94">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET [StatusAssetRetirement] = 'CIM'&#xA; WHERE [StatusAssetRetirement] = 'REL'" Name="QueryUpdateCIM" />
+      <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[TransactionAssetRetirement]&#xA;   SET [Status] = 'P'&#xA; WHERE [Status] is NULL" Name="QueryUpdateStatusExportExcelFile" />
+      <Variable x:TypeArguments="x:String" Default="Server=tdwk2db01;Database=RFA;User Id=rfa_app_user;Password=rfa@27072021;" Name="StrConSQL" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTQueryExportExcelFile" />
+      <Variable x:TypeArguments="x:String" Default="Processing\" Name="PathFileProcessing" />
+      <Variable x:TypeArguments="x:String" Default="AssetRetirement\PreRetirement\" Name="PathFileKeep" />
+      <Variable x:TypeArguments="x:String" Default="Asset data for retirement_" Name="NameFilePreOne" />
+      <Variable x:TypeArguments="x:String" Default=".xlsx" Name="NameFilePreTwo" />
+      <Variable x:TypeArguments="x:String" Default="AllFileAssetRetirementProcess\" Name="PathFileSendMail" />
+      <Variable x:TypeArguments="x:String" Default="Asset data for retirement.xlsx" Name="FileNameTemplate" />
+      <Variable x:TypeArguments="x:String" Default="PathRetirementProcess" Name="AssetPathRetirementProcess" />
+      <Variable x:TypeArguments="x:String" Default="PathRetirementTPL" Name="AssetPathTemplate" />
+      <Variable x:TypeArguments="x:String" Default="INSERT INTO [dbo].[TransactionAssetRetirement]&#xA;           ([SaleListNo]&#xA;           ,[GroupName]&#xA;           ,[WorkQueueNo]&#xA;           ,[WriteOffMainAsset]&#xA;           ,[AssetCompany]&#xA;           ,[AssetNumber]&#xA;           ,[SubNumber]&#xA;           ,[AssetClass]&#xA;           ,[Quantity]&#xA;           ,[PriceUnit]&#xA;           ,[Amount]&#xA;           ,[RFANo]&#xA;           ,[RFARequestDate]&#xA;           ,[WriteOffDate]&#xA;           ,[InvoiceDate]&#xA;           ,[CreateDateTime])&#xA;SELECT [SaleListNo]&#xA;           ,[GroupName]&#xA;           ,[WorkQueueNo]&#xA;           ,[WriteOffMainAsset]&#xA;           ,[AssetCompany]&#xA;           ,[AssetNumber]&#xA;           ,[SubNumber]&#xA;           ,[AssetClass]&#xA;           ,[Quantity]&#xA;           ,[PriceUnit]&#xA;           ,[Amount]&#xA;           ,[RFANo]&#xA;           ,[RFARequestDate]&#xA;           ,[WriteOffDate]&#xA;           ,[InvoiceDate]&#xA;           ,GETDATE()&#xA;  FROM [RFA].[dbo].[AssetRetirement]&#xA;  WHERE StatusAssetRetirement = 'REL' and ModifyDateTime &gt;= CURRENT_TIMESTAMP-1 " Name="QueryCopyDataToTransaction" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTInsertAndSelectByAssetRetirement" />
+      <Variable x:TypeArguments="x:String" Name="ValueAssetPartTemplate" />
+      <Variable x:TypeArguments="x:String" Name="ValueAssetPathRetirementProcess" />
+      <Variable x:TypeArguments="x:String" Name="PathTPL" />
+      <Variable x:TypeArguments="x:String" Name="PathProcess" />
+      <Variable x:TypeArguments="x:String" Default="SELECT [SaleListNo]&#xA;      ,[GroupName]&#xA;      ,[WorkQueueNo]&#xA;      ,[WriteOffMainAsset]&#xA;      ,[AssetCompany]&#xA;      ,[AssetNumber]&#xA;      ,[SubNumber]&#xA;      ,[AssetClass]&#xA;&#x9;  ,CAST([Quantity] AS int) AS Qty&#xA;      ,CAST([PriceUnit] AS int) AS PriceUnit&#xA;      ,CAST([Amount] AS int) AS Amount&#xA;      ,[RFANo]&#xA;      ,convert(varchar, [RFARequestDate], 5) AS RFARequestDate&#xA;&#x9;  ,convert(varchar, [CreateDateTime], 5) AS CreateDateTime&#xA;      ,convert(varchar, [InvoiceDate], 5) AS InvoiceDate&#xA;  FROM [RFA].[dbo].[TransactionAssetRetirement]&#xA;  WHERE Status IS NULL" Name="QueryExportExcelFile" />
+      <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement] SET [StatusAssetRetirement] = 'DAT' Where GroupName = N'" Name="QueryUpdatedataErrorOne" />
+      <Variable x:TypeArguments="x:String" Default="' and SaleListNo = '" Name="QueryUpdatedataErrorTwo" />
+      <Variable x:TypeArguments="x:String" Default="' and RFANo = '" Name="QueryUpdatedataErrorThree" />
+      <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'Y'" Name="QueryUpdatedataErrorFourFlagY" />
+      <Variable x:TypeArguments="x:Int32" Name="RandomNumber" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: SAP Easy Access" sap:VirtualizedContainerService.HintSize="1117,8331" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="SAP1" sap:VirtualizedContainerService.HintSize="1083,8039" sap2010:WorkflowViewState.IdRef="Sequence_93">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="[“/NAR01”]" Name="TCodeCreateWL" />
+              <Variable x:TypeArguments="x:String" Name="ValidateFlagStatus" />
+              <Variable x:TypeArguments="x:Int32" Name="CT_FlagYes" />
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="ST_Flag" />
+              <Variable x:TypeArguments="x:Int32" Default="3" Name="CT_FlagNo" />
+              <Variable x:TypeArguments="x:Int32" Default="24" Name="CT_SettingAsset" />
+              <Variable x:TypeArguments="x:String" Default="31.12.2021" Name="V_Setting_ReportDate" />
+              <Variable x:TypeArguments="x:String" Default="01" Name="V_Setting_Depreciation" />
+              <Variable x:TypeArguments="x:String" Default="0001" Name="V_Setting_SortVariant" />
+              <Variable x:TypeArguments="x:Int32" Name="ST_SettingAsset" />
+              <Variable x:TypeArguments="x:String" Name="GetStatusFlage" />
+              <Variable x:TypeArguments="x:String" Default="with" Name="TypeWithRevenue" />
+              <Variable x:TypeArguments="x:String" Default="without" Name="TypeWithOutRevenue" />
+              <Variable x:TypeArguments="x:String" Name="SetV_PostingDate" />
+              <Variable x:TypeArguments="x:String" Name="SetV_DocumentDate" />
+              <Variable x:TypeArguments="x:String" Name="SetV_TransactionType" />
+              <Variable x:TypeArguments="x:String" Name="SetV_AssetValueDate" />
+              <Variable x:TypeArguments="x:String" Name="SetV_Text" />
+              <Variable x:TypeArguments="x:String" Name="SetV_SalesRevenue" />
+              <Variable x:TypeArguments="x:String" Name="ResultWorkQueue" />
+              <Variable x:TypeArguments="x:String" Name="SetV_WL" />
+              <Variable x:TypeArguments="x:String" Default="Y" Name="FlagStatusY" />
+              <Variable x:TypeArguments="x:String" Default="N" Name="FlagStatusN" />
+              <Variable x:TypeArguments="x:String" Default="210" Name="TransactionTypeWithRevenue" />
+              <Variable x:TypeArguments="x:String" Name="Str_InvoiceDate" />
+              <Variable x:TypeArguments="x:String" Default="Select TOP(1) convert(varchar, [InvoiceDate], 104),&#xA;  CAST(PriceUnit AS INT)&#xA;  From [RFA].[dbo].[AssetRetirement]&#xA;  Where SaleListNo = '" Name="QueryInvoiceDate" />
+              <Variable x:TypeArguments="x:String" Name="PriceUnit" />
+              <Variable x:TypeArguments="x:Int32" Name="ST_DTInvoiceData" />
+              <Variable x:TypeArguments="s:String[]" Name="ArraySplitWorkQueu" />
+              <Variable x:TypeArguments="s:String[]" Name="ArrayWorkQueueSuccess" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DTAssetOfSaleList" />
+              <Variable x:TypeArguments="x:String" Name="PathFileSendMailSuccess" />
+              <Variable x:TypeArguments="x:String" Name="ReportDate" />
+              <Variable x:TypeArguments="x:String" Default="' and AssetNumber = '" Name="QueryUpdateWorkQueueFive" />
+              <Variable x:TypeArguments="x:String" Default="' and RFANo = '" Name="QueryUpdateWorkQueueSix" />
+              <Variable x:TypeArguments="x:String" Default="'" Name="QueryUpdateWorkQueueSeven" />
+              <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET [WorkQueueNo] = '" Name="QueryUpdateWorkQueueOne" />
+              <Variable x:TypeArguments="x:String" Default="/NAR31" Name="TCodeReleaseWorkQueue" />
+              <Variable x:TypeArguments="x:String" Name="PathFileTPLAssetRetirement" />
+              <Variable x:TypeArguments="ui:DatabaseConnection" Name="OutputConSQLReport" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="QUERYSQLFlage" sap:VirtualizedContainerService.HintSize="1041,7946" sap2010:WorkflowViewState.IdRef="Sequence_88">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:DatabaseConnection" Name="OutputConSQL" />
+                <Variable x:TypeArguments="x:String" Default="SELECT DISTINCT [SaleListNo],&#xA;  [WriteOffMainAsset],&#xA;  LEFT(CONCAT([SaleListNo],' ',[GroupName]),30)&#xA;  FROM [RFA].[dbo].[AssetRetirement]&#xA;  WHERE StatusAssetRetirement = 'P'" Name="QuerySaleList" />
+                <Variable x:TypeArguments="sd:DataTable" Name="DTRFANoFlageY" />
+                <Variable x:TypeArguments="s:String[]" Name="ArraySaleList" />
+                <Variable x:TypeArguments="x:String" Name="OutDTRFANo" />
+                <Variable x:TypeArguments="x:Int32" Name="ST_SaleList" />
+                <Variable x:TypeArguments="x:String" Default="SELECT DISTINCT RFANo FROM [RFA].[dbo].[AssetRetirement] WHERE StatusAssetRetirement = 'PEN' and WriteOffMainAsset = 'Y'" Name="QueryRFANoFlageY" />
+                <Variable x:TypeArguments="x:Int32" Name="ST_startFlag" />
+                <Variable x:TypeArguments="x:String" Name="Str_AssetNumber" />
+                <Variable x:TypeArguments="x:String" Name="CompanyCode" />
+                <Variable x:TypeArguments="x:String" Name="SubnumberFlagN" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="999,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[ST_startFlag]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="999,7752" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="963,7585" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="921,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:String[]">[ArrayWorkQueueSuccess]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:String[]">[new string(){}]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:DatabaseConnect DatabaseConnection="[OutputConSQL]" DisplayName="Connect DB" sap:VirtualizedContainerService.HintSize="921,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.SqlClient" ConnectionString="[StrConSQL]" />
+                    <Sequence DisplayName="Sequence RFAFlagN" sap:VirtualizedContainerService.HintSize="921,7294" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Default="SELECT DISTINCT RFANo FROM [RFA].[dbo].[AssetRetirement] WHERE StatusAssetRetirement = 'PEN' and WriteOffMainAsset = 'N'" Name="QueryRFANoFlageN" />
+                        <Variable x:TypeArguments="x:String" Name="OUTDT_RFA" />
+                        <Variable x:TypeArguments="sd:DataTable" Name="DTRFANoFlageN" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:DatabaseConnect DatabaseConnection="[OutputConSQL]" DisplayName="Connect DB" sap:VirtualizedContainerService.HintSize="879,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_2" ProviderName="System.Data.SqlClient" ConnectionString="[StrConSQL]" />
+                      <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTRFANoFlageN]" DisplayName="Select RFANo" sap:VirtualizedContainerService.HintSize="879,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_13" ProviderName="System.Data.SqlClient" Sql="[QueryRFANoFlageN]" ConnectionString="[StrConSQL]">
+                        <ui:ExecuteQuery.Parameters>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:ExecuteQuery.Parameters>
+                      </ui:ExecuteQuery>
+                      <ui:OutputDataTable DataTable="[DTRFANoFlageY]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="879,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[OUTDT_RFA]" />
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTRFANoFlageN]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="879,6913" sap2010:WorkflowViewState.IdRef="ForEachRow_14">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="845,6793" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Default="SELECT DISTINCT GroupName,Concat(SaleListNo,'_',[GroupName]) AS 'WorkList',[AssetCompany],IIF([Amount] &gt; 0,'with','without') AS RetireType&#xA;FROM [RFA].[dbo].[AssetRetirement]&#xA;WHERE RFANo = '" Name="QueryGroupNameOne" />
+                                <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'Y'" Name="QueryGroupNameTwo" />
+                                <Variable x:TypeArguments="sd:DataTable" Name="DTGroupNameandWorkList" />
+                                <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'N' and StatusAssetRetirement ='PEN'" Name="QueryGroupNameFlagNTwo" />
+                                <Variable x:TypeArguments="x:String" Default="SELECT GroupName,Concat(SaleListNo,'_',[GroupName]) AS 'WorkList',[AssetCompany],IIF([Amount] &gt; 0,'with','without') AS RetireType, convert(varchar, [InvoiceDate], 104), CAST(Amount AS DECIMAL(18,2)),RFANo,ID_PRODUCT_ITEM,SaleListNo&#xA;FROM [RFA].[dbo].[AssetRetirement]&#xA;WHERE RFANo = '" Name="QueryGroupNameFlagNOne" />
+                                <Variable x:TypeArguments="sd:DataTable" Name="DTGroupNameandWorkListFlagNo" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTGroupNameandWorkListFlagNo]" DisplayName="Select RFANo" sap:VirtualizedContainerService.HintSize="803,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_14" ProviderName="System.Data.SqlClient" Sql="[QueryGroupNameFlagNOne+CurrentRow(0).ToString+QueryGroupNameFlagNTwo]" ConnectionString="[StrConSQL]">
+                                <ui:ExecuteQuery.Parameters>
+                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                </ui:ExecuteQuery.Parameters>
+                              </ui:ExecuteQuery>
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTGroupNameandWorkListFlagNo]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="803,6573" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="RowGroupName" />
+                                    </ActivityAction.Argument>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="769,6453" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="727,6361" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="x:String" Default="SELECT AssetNumber &#xA;FROM [RFA].[dbo].[AssetRetirement]&#xA;WHERE RFANo = '" Name="QueryAssetNoOne" />
+                                          <Variable x:TypeArguments="x:String" Default="' and GroupName = '" Name="QueryAssetNoTwo" />
+                                          <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'Y'" Name="QueryAssetNoThree" />
+                                          <Variable x:TypeArguments="sd:DataTable" Name="DTAssetNo" />
+                                          <Variable x:TypeArguments="x:Int32" Name="ST_RowAssetNo" />
+                                          <Variable x:TypeArguments="x:String" Name="StrAsset" />
+                                          <Variable x:TypeArguments="x:String" Default="SELECT TOP(1) AssetNumber , SubNumber&#xA;FROM [RFA].[dbo].[AssetRetirement]&#xA;WHERE RFANo = '" Name="QueryAssetNoFlagNoOne" />
+                                          <Variable x:TypeArguments="x:String" Default="' and GroupName = N'" Name="QueryAssetNoFlagNoTwo" />
+                                          <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'N'" Name="QueryAssetNoFlagNoThree" />
+                                          <Variable x:TypeArguments="sd:DataTable" Name="DTAssetNoFlagNo" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_59">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[CompanyCode]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[RowGroupName(2).ToString]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_60">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[Str_InvoiceDate]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[RowGroupName(4).ToString]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_61">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[PriceUnit]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[RowGroupName(5).ToString]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="685,62" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="[&quot;Query Asset :&quot;+QueryAssetNoFlagNoOne+CurrentRow(0).ToString+QueryAssetNoFlagNoThree+RowGroupName(7).ToString+&quot;'&quot;]" />
+                                        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTAssetNoFlagNo]" DisplayName="Select RFANo" sap:VirtualizedContainerService.HintSize="685,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_15" ProviderName="System.Data.SqlClient" Sql="[QueryAssetNoFlagNoOne+CurrentRow(0).ToString+QueryAssetNoFlagNoThree]" ConnectionString="[StrConSQL]">
+                                          <ui:ExecuteQuery.Parameters>
+                                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                          </ui:ExecuteQuery.Parameters>
+                                        </ui:ExecuteQuery>
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="685,52" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_62">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">[ST_RowAssetNo]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:CommentOut>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_63">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[StrAsset]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <Literal x:TypeArguments="x:String" Value="" />
+                                            </InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_64">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[SubnumberFlagN]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <Literal x:TypeArguments="x:String" Value="" />
+                                            </InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTAssetNoFlagNo]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="685,464" sap2010:WorkflowViewState.IdRef="ForEachRow_12">
+                                          <ui:ForEachRow.Body>
+                                            <ActivityAction x:TypeArguments="sd:DataRow">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,344" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_65">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[StrAsset]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[StrAsset+CurrentRow(0).ToString]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_66">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SubnumberFlagN]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="262,52" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                                                  <ui:CommentOut.Body>
+                                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="526,311" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If Condition="[ST_RowAssetNo &gt; 0]" sap:VirtualizedContainerService.HintSize="484,219" sap2010:WorkflowViewState.IdRef="If_6">
+                                                        <If.Else>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_67">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[StrAsset]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[StrAsset+CurrentRow(0).ToString]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                        </If.Else>
+                                                      </If>
+                                                    </Sequence>
+                                                  </ui:CommentOut.Body>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:CommentOut>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ForEachRow.Body>
+                                        </ui:ForEachRow>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_68">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[Str_AssetNumber]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[StrAsset]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_69">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[SetV_WL]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[RowGroupName(1).ToString]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="685,60" sap2010:WorkflowViewState.IdRef="Assign_70">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[CompanyCode]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[RowGroupName(2).ToString]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="685,62" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="Wait TCode" />
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="685,4541" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="x:String" Default="200" Name="TransactionTypeWithOutRevenue" />
+                                            <Variable x:TypeArguments="x:String" Name="ReportDate" />
+                                            <Variable x:TypeArguments="x:String" Name="StrUpdateWorkQueue" />
+                                            <Variable x:TypeArguments="x:Boolean" Name="FlagYNoData" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="643,62" sap2010:WorkflowViewState.IdRef="WriteLine_21" Text="[&quot;CompanyCode :&quot;+CompanyCode]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="643,60" sap2010:WorkflowViewState.IdRef="Assign_71">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Int32">[ST_Flag]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="643,252" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="Str_AssetNumber" />
+                                              <Variable x:TypeArguments="x:String" Default="Select TOP(1) [AssetNumber]&#xA;  From [RFA].[dbo].[AssetRetirement]&#xA;  Where SaleListNo = '" Name="QueryAssetFromSaleListTypeN" />
+                                              <Variable x:TypeArguments="sd:DataTable" Name="DTAssetOfSaleListTypeN" />
+                                              <Variable x:TypeArguments="x:String" Name="Str_AssetTypeN" />
+                                              <Variable x:TypeArguments="s:String[]" Name="ResultQueryAssetTypeN" />
+                                              <Variable x:TypeArguments="x:Int32" Default="21" Name="CT_SettingAssetTypeN" />
+                                              <Variable x:TypeArguments="sd:DataTable" Name="DTInvoiceDate" />
+                                              <Variable x:TypeArguments="s:String[]" Name="ResultInvoiceDate" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_72">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[CT_FlagYes]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Int32">3</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_73">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[SetV_TransactionType]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">200</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
+                                          <Assign sap:VirtualizedContainerService.HintSize="643,60" sap2010:WorkflowViewState.IdRef="Assign_74">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[ReportDate]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[New datetime(now.Date.Year, now.Date.Month,1).AddMonths(1).AddDays(-1).ToString("dd.MM.yyyy", System.Globalization.CultureInfo.CurrentCulture)]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="643,3855" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                            <TryCatch.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="ModifyDateTime" />
+                                              <Variable x:TypeArguments="x:String" Name="DateStampWorkQueue" />
+                                              <Variable x:TypeArguments="x:String" Name="WriteOffNo" />
+                                              <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET StatusAssetRetirement = 'REL'&#xA;  ,ModifyDateTime = '" Name="QueryUpdateStatusRELWorkQueueOne" />
+                                              <Variable x:TypeArguments="x:String" Default="',ModifyBy = 'RPASystem'&#xA; WHERE Concat(SaleListNo,'_',GroupName) = '" Name="QueryUpdateStatusRELWorkQueueTwo" />
+                                              <Variable x:TypeArguments="x:String" Default="' and AssetNumber = '" Name="QueryUpdateStatusRELWorkQueueThree" />
+                                              <Variable x:TypeArguments="x:String" Default="' and RFANo = '" Name="QueryUpdateStatusRELWorkQueueFour" />
+                                              <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'N'" Name="QueryUpdateStatusRELWorkQueueFiv" />
+                                              <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET StatusAssetRetirement = 'REL'&#xA;  ,ModifyDateTime = '" Name="QueryUpdateStatusRELWorkFlagNQueueOne" />
+                                              <Variable x:TypeArguments="x:String" Default="',ModifyBy = 'RPASystem'&#xA; WHERE " Name="QueryUpdateStatusRELWorkFlagNQueueTwo" />
+                                              <Variable x:TypeArguments="x:String" Default=" AssetNumber = '" Name="QueryUpdateStatusRELWorkFlagNQueueThree" />
+                                              <Variable x:TypeArguments="x:String" Default="' and RFANo = '" Name="QueryUpdateStatusRELWorkFlagNQueueFour" />
+                                              <Variable x:TypeArguments="x:String" Default="' and WriteOffMainAsset = 'N' and GroupName = N'" Name="QueryUpdateStatusRELWorkFlagNQueueFiv" />
+                                            </TryCatch.Variables>
+                                            <TryCatch.Try>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="605,3600" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_75">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[GetStatusFlage]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[RowGroupName(3).ToString]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_76">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SetV_PostingDate]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[Str_InvoiceDate]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_77">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SetV_DocumentDate]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[Str_InvoiceDate]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_78">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SetV_AssetValueDate]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[Str_InvoiceDate]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_79">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SetV_SalesRevenue]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[PriceUnit]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_80">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[SetV_Text]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[SetV_WL]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_104">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[GetStatusFlage]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[TypeWithRevenue]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <If Condition="[GetStatusFlage = TypeWithRevenue]" sap:VirtualizedContainerService.HintSize="563,331" sap2010:WorkflowViewState.IdRef="If_8">
+                                                  <If.Then>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                                      <Sequence.Variables>
+                                                        <Variable x:TypeArguments="x:Int32" Name="ST_s1_sap1_put_text" />
+                                                        <Variable x:TypeArguments="x:Int32" Name="CT_s1_sap1_put_text" />
+                                                      </Sequence.Variables>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_81">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[SetV_TransactionType]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">210</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                    </Sequence>
+                                                  </If.Then>
+                                                </If>
+                                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="563,52" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+                                                  <ui:CommentOut.Body>
+                                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="839,144" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If Condition="[GetStatusFlage = TypeWithRevenue]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="If_9">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <If.Then>
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="376,3927" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                                            <Sequence.Variables>
+                                                              <Variable x:TypeArguments="x:Int32" Name="ST_s1_sap1_put_text" />
+                                                              <Variable x:TypeArguments="x:Int32" Name="CT_s1_sap1_put_text" />
+                                                            </Sequence.Variables>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_83">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:String">[SetV_TransactionType]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:String">210</InArgument>
+                                                              </Assign.Value>
+                                                            </Assign>
+                                                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_55" />
+                                                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TableRow'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                              <ui:Click.CursorPosition>
+                                                                <ui:CursorPosition Position="Center">
+                                                                  <ui:CursorPosition.OffsetX>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetX>
+                                                                  <ui:CursorPosition.OffsetY>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetY>
+                                                                </ui:CursorPosition>
+                                                              </ui:Click.CursorPosition>
+                                                              <ui:Click.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0308be77-a7af-4fee-9ed7-7fd1ff54bb8a" InformativeScreenshot="cd9620c7ac11e5c04f63ba25a0376a5d" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='Create Worklist: Choose Workflow Task' idx='*' /&gt;&lt;sap id='usr/subSUBSCREEN_FOR_TC1:SAPLSTC1:0115/tblSAPLSTC1GENERIC_TABLE_16' tableRow='1' /&gt;">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:Click.Target>
+                                                            </ui:Click>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_68" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="2d72f099-b23f-4de3-ad72-7407a59671bb">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_69" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d8eddca5-3a56-476e-98a9-2e32db893c91">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_70" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a5258b94-f937-4748-8c8e-c903249d6f82">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_37" Text="[SetV_PostingDate]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="0c9e7ecf-6428-46c7-abf0-d669efff1479">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_71" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_72" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="59d6ba91-fd8e-45b7-a3f3-ff5385b9675d">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_38" Text="[SetV_DocumentDate]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b2fc8ece-4e73-49ad-9f04-0f3ca99842f5">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_73" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_74" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="59d6ba91-fd8e-45b7-a3f3-ff5385b9675d">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_39" Text="[SetV_TransactionType]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="fbd3f494-6b62-4057-9c1c-b87798c32c3a">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_75" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_76" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="59d6ba91-fd8e-45b7-a3f3-ff5385b9675d">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_40" Text="[SetV_AssetValueDate]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="862709a2-cd63-48cf-8286-aaad201c2cd5">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_77" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_78" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_41" Text="[SetV_SalesRevenue]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="736f842f-acc6-4c1a-aa1e-25be1dd76edd">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_79" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_80" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                                                              <ui:CommentOut.Body>
+                                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_84">
+                                                                    <Assign.To>
+                                                                      <OutArgument x:TypeArguments="x:Int32">[ST_s1_sap1_put_text]</OutArgument>
+                                                                    </Assign.To>
+                                                                    <Assign.Value>
+                                                                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                                                    </Assign.Value>
+                                                                  </Assign>
+                                                                </Sequence>
+                                                              </ui:CommentOut.Body>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:CommentOut>
+                                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                                                              <ui:CommentOut.Body>
+                                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_85">
+                                                                    <Assign.To>
+                                                                      <OutArgument x:TypeArguments="x:Int32">[CT_s1_sap1_put_text]</OutArgument>
+                                                                    </Assign.To>
+                                                                    <Assign.Value>
+                                                                      <InArgument x:TypeArguments="x:Int32">4</InArgument>
+                                                                    </Assign.Value>
+                                                                  </Assign>
+                                                                </Sequence>
+                                                              </ui:CommentOut.Body>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:CommentOut>
+                                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                                                              <ui:CommentOut.Body>
+                                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="454,568" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ui:InterruptibleWhile Condition="[ST_s1_sap1_put_text &lt; CT_s1_sap1_put_text]" DisplayName="While" sap:VirtualizedContainerService.HintSize="412,476" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                                                                    <ui:InterruptibleWhile.Body>
+                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,309" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                          </scg:Dictionary>
+                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_81" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                                          <ui:SendHotkey.Target>
+                                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                              <ui:Target.TimeoutMS>
+                                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                                              </ui:Target.TimeoutMS>
+                                                                              <ui:Target.WaitForReady>
+                                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                              </ui:Target.WaitForReady>
+                                                                            </ui:Target>
+                                                                          </ui:SendHotkey.Target>
+                                                                        </ui:SendHotkey>
+                                                                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_86">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:Int32">[ST_s1_sap1_put_text]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:Int32">[ST_s1_sap1_put_text + 1]</InArgument>
+                                                                          </Assign.Value>
+                                                                        </Assign>
+                                                                      </Sequence>
+                                                                    </ui:InterruptibleWhile.Body>
+                                                                  </ui:InterruptibleWhile>
+                                                                </Sequence>
+                                                              </ui:CommentOut.Body>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:CommentOut>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_82" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6e67b490-9c1e-403f-8076-c2f8957099e0">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_12" Text="[SetV_Text]" />
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_83" Key="v" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3fe9dcc2-7e77-423b-b968-db4ef0bed781">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_84" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="ea9de907-80a1-4458-b9b9-e7ecc6bcaf06">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                          </Sequence>
+                                                        </If.Then>
+                                                        <If.Else>
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="376,3201" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_87">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:String">[SetV_TransactionType]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:String">200</InArgument>
+                                                              </Assign.Value>
+                                                            </Assign>
+                                                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_56" />
+                                                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TableRow'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                              <ui:Click.CursorPosition>
+                                                                <ui:CursorPosition Position="Center">
+                                                                  <ui:CursorPosition.OffsetX>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetX>
+                                                                  <ui:CursorPosition.OffsetY>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetY>
+                                                                </ui:CursorPosition>
+                                                              </ui:Click.CursorPosition>
+                                                              <ui:Click.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a05c7ea8-3033-48d8-8de4-0e751ffe188d" InformativeScreenshot="9bab47b1968d3f9914c3a9f9efb7296a" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='Create Worklist: Choose Workflow Task' idx='*' /&gt;&lt;sap id='usr/subSUBSCREEN_FOR_TC1:SAPLSTC1:0115/tblSAPLSTC1GENERIC_TABLE_16' tableRow='0' /&gt;">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:Click.Target>
+                                                            </ui:Click>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_85" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9eded864-1023-41a8-bdfe-1c77fd22c4a8">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_86" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d8eddca5-3a56-476e-98a9-2e32db893c91">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_87" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a5258b94-f937-4748-8c8e-c903249d6f82">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_42" Text="[SetV_PostingDate]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="0c9e7ecf-6428-46c7-abf0-d669efff1479">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_88" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_89" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="59d6ba91-fd8e-45b7-a3f3-ff5385b9675d">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_43" Text="[SetV_DocumentDate]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b2fc8ece-4e73-49ad-9f04-0f3ca99842f5">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_90" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_91" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="59d6ba91-fd8e-45b7-a3f3-ff5385b9675d">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_44" Text="[SetV_TransactionType]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="fbd3f494-6b62-4057-9c1c-b87798c32c3a">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_92" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_93" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="59d6ba91-fd8e-45b7-a3f3-ff5385b9675d">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_45" Text="[SetV_AssetValueDate]">
+                                                              <ui:TypeInto.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="862709a2-cd63-48cf-8286-aaad201c2cd5">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:TypeInto.Target>
+                                                            </ui:TypeInto>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_94" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_95" Key="tab" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="305c7df2-520a-41a1-ae1d-df8db445784b">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_96" Key="a" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="6e67b490-9c1e-403f-8076-c2f8957099e0">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_13" Text="[SetV_Text]" />
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_97" Key="v" KeyModifiers="Ctrl">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3fe9dcc2-7e77-423b-b968-db4ef0bed781">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_98" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="ea9de907-80a1-4458-b9b9-e7ecc6bcaf06">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                          </Sequence>
+                                                        </If.Else>
+                                                      </If>
+                                                    </Sequence>
+                                                  </ui:CommentOut.Body>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:CommentOut>
+                                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="563,22" sap2010:WorkflowViewState.IdRef="Delay_57" />
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_88">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[StrUpdateWorkQueue]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">
+                                                      <Literal x:TypeArguments="x:String" Value="" />
+                                                    </InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <Assign sap:VirtualizedContainerService.HintSize="563,60" sap2010:WorkflowViewState.IdRef="Assign_105">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[RandomNumber]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[new Random().Next(1,100)]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="563,384" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                                  <TryCatch.Try>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_90">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[StrUpdateWorkQueue]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[RandomNumber.ToString]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                    </Sequence>
+                                                  </TryCatch.Try>
+                                                  <TryCatch.Catches>
+                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ActivityAction x:TypeArguments="s:Exception">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                        </ActivityAction.Argument>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_91">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[StrUpdateWorkQueue]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[""]</InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                      </ActivityAction>
+                                                    </Catch>
+                                                  </TryCatch.Catches>
+                                                </TryCatch>
+                                                <If Condition="[StrUpdateWorkQueue Is Nothing]" sap:VirtualizedContainerService.HintSize="563,1659" sap2010:WorkflowViewState.IdRef="If_11">
+                                                  <If.Else>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="418,1500" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                                      <Sequence.Variables>
+                                                        <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET [WorkQueueNo] = '" Name="QueryUpdateWorkQueueOne" />
+                                                        <Variable x:TypeArguments="x:String" Default=" WHERE SaleListNo ='" Name="QueryUpdateWorkQueueTwo" />
+                                                        <Variable x:TypeArguments="sd:DataTable" Name="DTUpdateWorkQueue" />
+                                                        <Variable x:TypeArguments="x:String" Default="/NAR31" Name="TCodeReleaseWorkQueue" />
+                                                        <Variable x:TypeArguments="x:String" Name="OutPutStrWorkQueuSuccess" />
+                                                        <Variable x:TypeArguments="s:String[]" Name="ArraySplitWorkQueueSuccess" />
+                                                        <Variable x:TypeArguments="x:String" Name="DateTimeStampEmail" />
+                                                        <Variable x:TypeArguments="x:String" Name="QueryUpdateWorkQueueFlageYCREOne" />
+                                                        <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET [WorkQueueNo] = '" Name="QueryUpdateWorkQueueFlagNOne" />
+                                                        <Variable x:TypeArguments="x:String" Default=" , StatusAssetRetirement = 'CRE' " Name="QueryUpdateWorkQueueFlagNTwo" />
+                                                        <Variable x:TypeArguments="x:String" Default=",[ModifyDateTime] = '" Name="QueryUpdateWorkQueueFlagNThree" />
+                                                        <Variable x:TypeArguments="x:String" Default="',[ModifyBy] = 'RPASystem' &#xA;WHERE [WriteOffMainAsset] = 'N' and AssetCompany = '" Name="QueryUpdateWorkQueueFlagNFour" />
+                                                        <Variable x:TypeArguments="x:String" Default="' and AssetNumber = '" Name="QueryUpdateWorkQueueFlagNFive" />
+                                                        <Variable x:TypeArguments="x:String" Default="' and RFANo = '" Name="QueryUpdateWorkQueueFlagNSix" />
+                                                        <Variable x:TypeArguments="x:String" Default="' and GroupName = N'" Name="QueryUpdateWorkQueueFlagNSeven" />
+                                                      </Sequence.Variables>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="376,62" sap2010:WorkflowViewState.IdRef="WriteLine_27" Text="Have work queue" />
+                                                      <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_92">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[DateStampWorkQueue]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[DateAndTime.Now.ToString("yyyy-MM-dd").ToString]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_93">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[ModifyDateTime]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[DateAndTime.Now.ToString("yyyy-MM-dd hh:mm:ss").ToString]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_94">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[WriteOffNo]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[RowGroupName(6).ToString]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="376,62" sap2010:WorkflowViewState.IdRef="WriteLine_28" Text="[QueryUpdateWorkQueueFlagNOne+StrUpdateWorkQueue+&quot;'&quot;+QueryUpdateWorkQueueFlagNTwo+QueryUpdateWorkQueueFlagNThree+ModifyDateTime.ToString+QueryUpdateWorkQueueFlagNFour+CompanyCode+QueryUpdateWorkQueueFlagNFive+Str_AssetNumber+QueryUpdateWorkQueueFlagNSix+WriteOffNo.ToString+QueryUpdateWorkQueueFlagNSeven+RowGroupName(0).ToString+&quot;'&quot;]" />
+                                                      <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTUpdateWorkQueue]" DisplayName="Update Asset CRE" sap:VirtualizedContainerService.HintSize="376,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_17" ProviderName="System.Data.SqlClient" Sql="[QueryUpdateWorkQueueFlagNOne+StrUpdateWorkQueue+&quot;'&quot;+QueryUpdateWorkQueueFlagNTwo+QueryUpdateWorkQueueFlagNThree+ModifyDateTime.ToString+QueryUpdateWorkQueueFlagNFour+CompanyCode+QueryUpdateWorkQueueFlagNFive+Str_AssetNumber+QueryUpdateWorkQueueFlagNSix+WriteOffNo.ToString+QueryUpdateWorkQueueFlagNSeven+RowGroupName(0).ToString+&quot;'&quot;]" ConnectionString="[StrConSQL]">
+                                                        <ui:ExecuteQuery.Parameters>
+                                                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                        </ui:ExecuteQuery.Parameters>
+                                                      </ui:ExecuteQuery>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_95">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="s:String[]">[ArraySplitWorkQueueSuccess]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="s:String[]">[New String(){}]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_97">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[DateTimeStampEmail]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[DateAndTime.Now.ToString("yyyy-MM-dd").ToString]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_98">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[ModifyDateTime]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[DateAndTime.Now.ToString("yyyy-MM-dd hh:mm:ss").ToString]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,476" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                                        <Sequence.Variables>
+                                                          <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;SET WorkQueueNo = '" Name="QueryUpdateWorkQueuOne" />
+                                                          <Variable x:TypeArguments="x:String" Default="' ,StatusAssetRetirement = 'C'&#xA;   ,WriteOffDate = '&#xA;  " Name="QueryUpdateWorkQueuTwo" />
+                                                          <Variable x:TypeArguments="x:String" Default="' FROM [RFA].[dbo].[AssetRetirement]&#xA;    WHERE [AssetCompany] = '" Name="QueryUpdateWorkQueuThree" />
+                                                          <Variable x:TypeArguments="x:String" Default="and AssetNumber = '" Name="QueryUpdateWorkQueuFour" />
+                                                          <Variable x:TypeArguments="sd:DataTable" Name="DTUpdateWorkQueueByAssetNumber" />
+                                                          <Variable x:TypeArguments="x:String" Default="'" Name="QueryUpdateWorkQueuFive" />
+                                                          <Variable x:TypeArguments="x:String" Default="'" Name="QueryUpdateWorkQueuSeven" />
+                                                          <Variable x:TypeArguments="x:String" Default="' , RFANo = '" Name="QueryUpdateWorkQueuSix" />
+                                                        </Sequence.Variables>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+                                                          <ui:CommentOut.Body>
+                                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[&quot;Have workqueue REL&quot;]" />
+                                                            </Sequence>
+                                                          </ui:CommentOut.Body>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </ui:CommentOut>
+                                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_29" Text="[QueryUpdateStatusRELWorkFlagNQueueOne+ModifyDateTime.ToString+QueryUpdateStatusRELWorkFlagNQueueTwo+QueryUpdateStatusRELWorkFlagNQueueThree+StrAsset.Tostring+QueryUpdateStatusRELWorkFlagNQueueFour+WriteOffNo+QueryUpdateStatusRELWorkFlagNQueueFiv+RowGroupName(0).ToString+&quot;'&quot;]" />
+                                                        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTAssetOfSaleList]" DisplayName="UpdateWorkQueueByAssetNumber" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_18" ProviderName="System.Data.SqlClient" Sql="[QueryUpdateStatusRELWorkFlagNQueueOne+ModifyDateTime.ToString+QueryUpdateStatusRELWorkFlagNQueueTwo+QueryUpdateStatusRELWorkFlagNQueueThree+StrAsset.Tostring+QueryUpdateStatusRELWorkFlagNQueueFour+WriteOffNo+QueryUpdateStatusRELWorkFlagNQueueFiv+RowGroupName(0).ToString+&quot;'&quot;]" ConnectionString="[StrConSQL]">
+                                                          <ui:ExecuteQuery.Parameters>
+                                                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                          </ui:ExecuteQuery.Parameters>
+                                                        </ui:ExecuteQuery>
+                                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="WriteLine_30" Text="After TCode" />
+                                                      </Sequence>
+                                                    </Sequence>
+                                                  </If.Else>
+                                                </If>
+                                              </Sequence>
+                                            </TryCatch.Try>
+                                            <TryCatch.Catches>
+                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="609,22" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ActivityAction x:TypeArguments="s:Exception">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="568,1054" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET StatusAssetRetirement = 'DAT'&#xA;  ,ModifyDateTime = '" Name="QueryUpdateStatusDATWorkFlagNQueueOne" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="526,962" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                                                      <Sequence.Variables>
+                                                        <Variable x:TypeArguments="x:String" Name="strNoData" />
+                                                      </Sequence.Variables>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TextField  MESSTXT1'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
+                                                        <ui:GetValue.Target>
+                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0d8289c1-f9bb-4f99-97bb-017e2c644347" InformativeScreenshot="d38ea66f8c104454218eca6433a10037" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='Information' idx='*' /&gt;&lt;sap id='usr/txtMESSTXT1' /&gt;">
+                                                            <ui:Target.TimeoutMS>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:Target.TimeoutMS>
+                                                            <ui:Target.WaitForReady>
+                                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                            </ui:Target.WaitForReady>
+                                                          </ui:Target>
+                                                        </ui:GetValue.Target>
+                                                        <ui:GetValue.Value>
+                                                          <OutArgument x:TypeArguments="x:String">[strNoData]</OutArgument>
+                                                        </ui:GetValue.Value>
+                                                      </ui:GetValue>
+                                                      <If Condition="[strNoData = &quot;No data was selected&quot;]" sap:VirtualizedContainerService.HintSize="484,724" sap2010:WorkflowViewState.IdRef="If_12">
+                                                        <If.Then>
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="376,545" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_108" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                                              <ui:SendHotkey.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7ca9f0f5-b343-4e4a-826e-d17ae9553cea">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:SendHotkey.Target>
+                                                            </ui:SendHotkey>
+                                                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'OkCodeField  okcd'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_26" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                              <ui:Click.CursorPosition>
+                                                                <ui:CursorPosition Position="Center">
+                                                                  <ui:CursorPosition.OffsetX>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetX>
+                                                                  <ui:CursorPosition.OffsetY>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:CursorPosition.OffsetY>
+                                                                </ui:CursorPosition>
+                                                              </ui:Click.CursorPosition>
+                                                              <ui:Click.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9889b8a-4448-4152-b3ec-0095111c90e9" InformativeScreenshot="df31db7ff83ba14d42cc1646d736e62d" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Asset Balances' /&gt;&lt;sap id='tbar[0]/okcd' /&gt;">
+                                                                  <ui:Target.TimeoutMS>
+                                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                                  </ui:Target.TimeoutMS>
+                                                                  <ui:Target.WaitForReady>
+                                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                                  </ui:Target.WaitForReady>
+                                                                </ui:Target>
+                                                              </ui:Click.Target>
+                                                            </ui:Click>
+                                                            <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTAssetOfSaleList]" DisplayName="UpdateWorkQueueByAssetNumber" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_19" ProviderName="System.Data.SqlClient" Sql="[QueryUpdateStatusRELWorkFlagNQueueOne+ModifyDateTime.ToString+QueryUpdateStatusRELWorkFlagNQueueTwo+QueryUpdateStatusRELWorkFlagNQueueThree+StrAsset.Tostring+QueryUpdateStatusRELWorkFlagNQueueFour+WriteOffNo+QueryUpdateStatusRELWorkFlagNQueueFiv]" ConnectionString="[StrConSQL]">
+                                                              <ui:ExecuteQuery.Parameters>
+                                                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                              </ui:ExecuteQuery.Parameters>
+                                                            </ui:ExecuteQuery>
+                                                            <ui:Break sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Break_9" />
+                                                          </Sequence>
+                                                        </If.Then>
+                                                      </If>
+                                                    </Sequence>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </Catch>
+                                              <Catch x:TypeArguments="s:InvalidOperationException" sap:VirtualizedContainerService.HintSize="609,22" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ActivityAction x:TypeArguments="s:InvalidOperationException">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,556" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="x:String" Default="UPDATE [dbo].[AssetRetirement]&#xA;   SET StatusAssetRetirement = 'DAT'&#xA;  ,ModifyDateTime = '" Name="QueryUpdateStatusDATWorkFlagNQueueOne" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_109" Key="esc" KeyModifiers="None" SpecialKey="True">
+                                                      <ui:SendHotkey.Target>
+                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="3161e0dc-fd97-4a5e-8fcd-80631b5adbfc">
+                                                          <ui:Target.TimeoutMS>
+                                                            <InArgument x:TypeArguments="x:Int32" />
+                                                          </ui:Target.TimeoutMS>
+                                                          <ui:Target.WaitForReady>
+                                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                          </ui:Target.WaitForReady>
+                                                        </ui:Target>
+                                                      </ui:SendHotkey.Target>
+                                                    </ui:SendHotkey>
+                                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="SendHotkey_110" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                                      <ui:SendHotkey.Target>
+                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="97e71393-3606-41e9-9d0b-3076665a9ca8">
+                                                          <ui:Target.TimeoutMS>
+                                                            <InArgument x:TypeArguments="x:Int32" />
+                                                          </ui:Target.TimeoutMS>
+                                                          <ui:Target.WaitForReady>
+                                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                          </ui:Target.WaitForReady>
+                                                        </ui:Target>
+                                                      </ui:SendHotkey.Target>
+                                                    </ui:SendHotkey>
+                                                    <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DTAssetOfSaleList]" DisplayName="UpdateWorkQueueByAssetNumber" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_20" ProviderName="System.Data.SqlClient" Sql="[QueryUpdateStatusRELWorkFlagNQueueOne+ModifyDateTime.ToString+QueryUpdateStatusRELWorkFlagNQueueTwo+QueryUpdateStatusRELWorkFlagNQueueThree+StrAsset.Tostring+QueryUpdateStatusRELWorkFlagNQueueFour+WriteOffNo+QueryUpdateStatusRELWorkFlagNQueueFiv]" ConnectionString="[StrConSQL]">
+                                                      <ui:ExecuteQuery.Parameters>
+                                                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                      </ui:ExecuteQuery.Parameters>
+                                                    </ui:ExecuteQuery>
+                                                    <ui:Break sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Break_10" />
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </Catch>
+                                            </TryCatch.Catches>
+                                          </TryCatch>
+                                        </Sequence>
+                                      </Sequence>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                              </ui:ForEachRow>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+                <ui:InterruptibleWhile.Condition>
+                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="ST_startFlag = 0" />
+                </ui:InterruptibleWhile.Condition>
+              </ui:InterruptibleWhile>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 876" ContentHash="E0_PnI88lUu2gt6Qi_lW-Q" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAtLSURBVFhHvZd5ONVpG8dtGUtE9ko1NdWkVBKVkokitFnKlp0hy6tCIUuTJSNLWlSWZOwhSymEOBiiRYWIImtUFMJb6fve58w77zQz5prrev8Y1/W5HD/n/L6f+37u85znsH2lYOkxffORdIPQ0iz7H1OuOZxMLXQ5f6vUNb6u0j2lscY9vvquW3x1vWt87WPHmNomm/N3npqG3Hyu75/bs9MvZ2CLZ9bghkNpw/J20WOyFmcnlpiEf/jGKAJiinv92djYxAkuAGx/BRu7vO097lVmeDc+ib73QM8w0Dn0Ce2v/43W/jE86hxGVfNrXK/rxOVbT3DySi0OXSiFSWA2thy6DDnL0/jWKATz9QIxa7sfxDS9MX3l7iZ2Tq4DFL6G4Jsq+FfYOFZbVvKusUbfu48IKB6F37WXOJL5As4JTbC5cA9G4QzoBBZim3cOvnNPg9K/ErDGPgarrKOwzCwS35qEY5FhCBbsOYGv9YMhrmI/zMHNn0XBjsS3xLSpgn+FBKwqeRVt0Pv2A/yuD8Ar8zkOJDbC9kId9kUwoBtYAC3vbGx2S8UGlwQo7o/FatvzWGFxhgROYSkJLDEKxWLjUHyt6z/JyS9aRKFexN9Wz4SNU96qkm+dHboHJ+Ca9hwOl+phcboK+kGF0PbJgRoz2CkeinYXsdrqHFaYR0J2XziWmYRBhkJlqHoZo5NYqBPwmV1oXi2F/khsJgQJ9qlCv4QELCv5lfaj680YbC4+gNHJUmh4ZEHRNhpL91Jrdx7HHFpXqS1HIK7qBlGVg5i50QVCSk4QXLsf/Arfg0fOFiLzZRsp8DSxkxAzMTHmKLh5k6O4+BZHcUkJZ3l5OVf8pXjumJgYbjdXV84vBKyqBDY64sXAKPSDS7HWIhzSyjZYoeWMnd8HQmd/IPQdg2DofAImLsGw9zoFN/8oeJ2IRlBkPCIuJiMyOvWzr79/d3pq8pOcnJz7ubk59zMzsxpSU660JSamd12OT+2Pv5T6Ni4meSL64uWxiLCwViEhoYUkykcC1gzBTc5ofzmMLR5XsXDbQezcrY+UpETkZmezuJZzDXnZuSxyr+YgJzMbWRlZuJKSjpTEZPx0OQExF2MQGXEGJ0+GIigwCEHBxxAQ5IljAQfgfcwOh4+aws1LF9Z2WlDZpPaZi4vLjgS+ZgnMUHHBs763WLs/AXPVnKCjb4DkxATq0NQ/k5Mf8eHDe4yND+LtSA9eD7WiZ+A+OnrK0NyRi0ctCbjzOBKM+8dQVO2CnNumSMrXRlzeJngEKUFxzcZJDg7OcBJYycZFAsKbD6K1Zwiy5lGYtckOO3bvRcLleFbY8IdbmEAZRieL6XEhBify0T+Sjd6hdHQMJOJpTwwa28/gQUsI7jQeR0W9F0rvHkLhzw64Xm6Nq8XGSLmhg7hMdUSlKcHFWxFyK9eSAEckCcixBERUD6HpxSssMQyH1AYbaO/Uw6W4WJbAy6F8DI3fwuuRAgwMX0ff2xx0v8lAR38ynvfHobUvCs3d4XjcEYh7rT6oaXJHeb0TCqttkVtmirSCPbiUrYXTiSoIiZWH7YEVWC6z+jeBaWtsGKJb3FDf9pLexycgqWSFbdt1EBsTzRJ49/4mRj8VYXCcKh/ORtfrK3je+xMan0eDURuCnEIf/JRxCKej7eAfbAYXtz2wc9SBjZ0OzK13wWjfDujt0YKWtipU1VSgrLwBS2Vkfi8gpu5O5l2Yvf04JNZZYqvmDkRfvMASCA0PQFhEMIKDA3Dc/xh8fI7C/bAb9ts7wvWQO7w8f4CfbzDCw84hPi4FuTk3UHCjBEWFt1FawkB5+c+oYFSDwajC3bsPcPb0OcyeM/sLAQVbhrjGEZQ9aIekpi/E15pj81ZNREWdo0H7gLLqGNx7lIRHzSl40p6CZ92p6OxJwYED9nj48DE+0nPGJ8YxNjaG0dERvHs3jMHBQfT396O7qxvPnj1DY2Mj6urqiLsICwuDuJj4JDs7+68dsGVIbPPEzZoWiKp7sQQ2bdbA2bORdMNRav1VvEc+Rj7l4d2nbAx9yMDbjymwd7BEff1jjL4fxUsK6+vrQ3d3Nzo7O9HR3o7W1jY8aW4myYeorb1DnShHRUUFgoKCICw88zcBbuqAhKYnrpY3QGSLBwmYQUlZDacjI/Bq4BXtkCl4NZaJ/tF09I0koXf4MnpHYmBhZUg3vkcVv0Xfyz709vay6O75RaK9o51V/ZMnT0j0Ie7cqUUtwRSYMWPG7wWkSCCl6D5mqtF2u84cCus3ISw0FB0dHWgfiKdPyiR0D8WjczAaL95EoeNNJEz26aKxoZk1J8MjwyxZZnhbWxuamppYFScmJiIgIABWVlbQ0NDAxo0bsXz5coiLf7EEXyl+z5DS8kLctVoIq5IALYGcghJOhvyIBlq7pz3nKTiWRKLQ1n8aT/vC6ZwQDGMTHQT4n4C3jzcsLa3ob2Po6elBS0sLqqqq2Lp1KzS1tKGrowsrayu4ubvh+PHjsLaxhqCA4B8ENL1wKp1BHfCABAmsWK1A26k/qqtr0PgighXc3BOKpq4TaHjhj8YuP+w12A4nRxfWsKampiKbtuz8/BsoLS1FVVUVampqaIlq6R7VKCkpxvX8fBQWFLCEv+Lh+U2AhwQkScA3pgiiWz3pbWgBmRVyOObni6KiItofgigwBA/bA3D/mR/utx3F3VZ36Opvw8P6RkxMTODVq1fooQFkTXxDA2vimQPHfH1eXh4yMzORmpKKLPrt7uYGnj8KSGzzgsPJbEhu84bkeksslpHFUU8PpF+5gjtNvnjw7AfUNh9l7XI/N7iisoE+KXW2glFehZ6eHrS0tNBbrYE1bMyqGRReXMys+jqysrKQlpaGpKQkZND93P4ksNaO9gFPGPgkY462L6SUbPDNkmW0yRxEdHQMGA/dUd10mH4foL3CGaX3HFB81xrbd6ii7HYFurq6WEPHDK+rq0VlRSVuUXj+jRugj2ZW9enp6axlYnbD28fnDwLr7Bii6p7QdI3H/F0BEF21+/Xc+QtGnBwdEBISgqJaB9y+54iiO7a4WW2J/Coz5FUYQmObMgoLS1htr6+vp8rrUFlVicrKSmo/g9a9hGYiHxkZGUhKTEJcXBxrEzIwMIDAl0PIu96eIaLuAWXnWMzXOjzOyc2bIz1LqsfW1hZeXl7IKzOnUHPkMoyRXbYXWaV6uFK6Hapb1lFQNWsDekzrXl3DHLZSxMbGwpfmx9DQAJs2qUBObjUWLVqE2bNnY+bMmaCDCObMmfPpfwJ8Sg73RDSOYpVZ6CceIclSuugnLT3nhZmZOZycnXD1ti6yGTpIvqmN+FwNXMxQQ0iMMjYoy8PezgGmpqZQV1eHvLw8Fi5cADExccwQmkFBwp9oyx2XkpIalJSU7KLwBxReIiAgcJWbmzuOcpyJRWycy/QdeVYZVs2SWV9GF4Lpn7vIsMXY2IQC7ODguhlGZirQ3rUe36kpQFFRDrKyK7FcVhbz5s1jVvZ5/rx5H+nxa2lp6RZRUdEKQUHBgunTBbL4+PgSqFLmIZV5SnYgjAht4jtChhAg2IQJZcKY2CIgMH3xrFmzuoyMDGFpYYmVsopYtUJhcvkyuYllMivfLVm8tHfu3PkNEhIS5cLCwrm8vLzMkDP02iDCjbAgdAgNQoVgHs+Z3w+kCVGCGcpDcBLsBBsXMYNgfo0S4ufn5xUREdmnqKiYKysryxATE7tF7culqpKmTZt2ip7jS/yLMCWYJ2BVYi0hSywgJAkhYjrBS0wj/vJ4/ucLv1jNJNYRev9Fi2Ce9ZlBy4h5BFOYKc4MYRbxt98BpmLqi7+0h58QIZgyzLbxEdwEx1Sv+X+Z8uI/yZQX/znA9h/AAEeQMzIZsQAAAABJRU5ErkJggg==" InformativeScreenshot="dcf6e3a541896e52a52387972818fa3e.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
